@@ -1,0 +1,22 @@
+{
+    "name": "TTS ChatGPT Downloader",
+    "description": "Download TTS from ChatGPT",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": ["tabs", "storage", "activeTab", "tabGroups", "cookies", "scripting", "webRequest"],
+    "host_permissions": [
+        "https://chat.openai.com/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://chat.openai.com/*"
+            ],
+            "js": [
+                "js/jquery.js",
+                "js/content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
