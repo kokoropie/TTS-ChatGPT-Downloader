@@ -3,7 +3,7 @@
     "description": "Download TTS from ChatGPT",
     "version": "1.0",
     "manifest_version": 3,
-    "permissions": ["tabs", "storage", "activeTab", "tabGroups", "cookies", "scripting", "webRequest"],
+    "permissions": [],
     "host_permissions": [
         "https://chat.openai.com/*"
     ],
